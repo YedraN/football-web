@@ -31,7 +31,11 @@ function Summary() {
                                 description="Siendo durante muchos años el máximo goleador de la historia, Pelé ganó con Brasil 3 mundiales y fue el mayor referente brasileño en la historia del fútbol."
                                 image="../../../public/pele.webp"
                             />
-                            <div className="cruyff"></div>
+                            <PlayerCard
+                                name="Cruyff"
+                                description=""
+                                image="../../../public/cruyff.webp"
+                            />
                         </div>
                     </div>
                 </div>
