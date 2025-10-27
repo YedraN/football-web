@@ -59,3 +59,54 @@ body {
     height: 2px;
     background-color: var(--primary-color);
 }
+
+/* PÁGINA PRINCIPAL */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.summary {
+    padding: 10px;
+    width: 80%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.text p {
+    width: 40%;
+    text-align: center;
+}
+
+.football-history {
+    display: flex;
+    flex-direction: column;
+}
+
+.football-history p {
+    width: 80%;
+}
+
+.jugadores img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
