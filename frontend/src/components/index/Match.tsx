@@ -16,7 +16,11 @@ function Match({ match, teams, description, image }: Props) {
                     <h3>{teams}</h3>
                     <p>{description}</p>
                 </div>
-                <img src={image} id="img-match"/>
+                <div className="wrapper lightBeam">
+                    <div className="inside">
+                        <img src={image} id="img-match" />
+                    </div>
+                </div>
             </div>
         </>
     )

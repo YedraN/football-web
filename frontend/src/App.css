@@ -137,8 +137,86 @@ body {
 }
 
 #img-match {
-    width: 40%;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     object-fit: cover;
     border-radius: 30px;
+    transition: 0.2s;
+}
+
+.wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 30px;
+}
+
+.wrapper .inside {
+    padding: 25px;
+    background: var(--primary-bgcolor);
+    color: #fff;
+    border-radius: var(--border-radius);
+}
+
+.wrapper h3 {
+    margin-bottom: 15px;
+}
+
+.lightBeam {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightBeam .inside {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.lightBeam .inside {
+    margin: 2px;
+}
+
+.lightBeam::before {
+    content: "";
+    display: block;
+    background: linear-gradient(90deg,
+        rgba(20, 136, 252, 0) 0%,
+        rgba(20, 136, 252, 80%) 40%,
+        rgba(20, 136, 252, 80%) 50%,
+        rgba(20, 136, 252, 0) 100%);
+
+    height: 150px;
+    width: 40px;
+    transform: translate(0);
+    position: absolute;
+    animation: rotate 3s linear forwards infinite;
+    z-index: 0;
+    top: 50%;
+    transform-origin: top center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0) scaleX(4);
+    }
+
+    25% {
+        transform: rotate(90deg) scaleX(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scaleX(4);
+    }
+
+    75% {
+        transform: rotate(270deg) scaleX(1);
+    }
+
+    100% {
+        transform: rotate(360deg) scaleX(4);
+    }
 }
