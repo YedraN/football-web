@@ -1,5 +1,6 @@
 import '../../App.css'
 import PlayerCard from './PlayerCard';
+import Match from './Match';
 
 function Summary() {
     return (
@@ -33,10 +34,29 @@ function Summary() {
                             />
                             <PlayerCard
                                 name="Cruyff"
-                                description=""
+                                description="Dirigiendo la Naranja Mecánica con su juego en Holanda fue el causante del cambio más grande en el juego táctico del fútbol."
                                 image="../../../public/cruyff.webp"
                             />
                         </div>
+                    </div>
+                    <br/>
+                    <div className="best-matches">
+                        <div className="line"></div>
+                        <h2>Grandes Partidos</h2>
+                        <Match
+                            match="Final Copa del Mundo de 2010"
+                            teams="España - Holanda"
+                            description="España se impuso a Holanda en una final muy intensa y llena de faltas. El partido estuvo marcado por la dureza y la tensión hasta el final."
+                            image="../../../public/iniesta.webp"
+                        />
+                        <br/>
+                        <br/>
+                        <Match
+                            match="Semifinal Copa del Mundo de 1986"
+                            teams="Argentina - Inglaterra"
+                            description="España se impuso a Holanda en una final muy intensa y llena de faltas. El partido estuvo marcado por la dureza y la tensión hasta el final."
+                            image="../../../public/iniesta.webp"
+                        />
                     </div>
                 </div>
             </div>

@@ -9,10 +9,10 @@ interface PlayerCardProps {
 function PlayerCard({ name, description, image }: PlayerCardProps) {
     return (
         <>
-            <div className="messi">
-                <img src={image} alt="Messi celebracion mundial 2022 Qatar"/>
+            <div className="player-card">
+                <img src={image}/>
                 <p><strong>{name}</strong></p>
-                <p id="messi-text">{description}</p>
+                <p id="card-text">{description}</p>
             </div>
         </>
     )
